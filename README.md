@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [(https://github.com/Ataize/Time-tracking)]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [(https://ataize.github.io/Time-tracking/)]
 
 ## My process
 
