@@ -1,7 +1,7 @@
 
 // Carregar dados JSON e inicializar a aplicação
 let json;
-fetch('/data.json')
+fetch('./data.json')
     .then(response => response.json())
     .then(data => json = data)        
     .catch(error => console.error('Erro ao carregar JSON:', error));
