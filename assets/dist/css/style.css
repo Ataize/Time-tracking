@@ -121,23 +121,23 @@ body .time-tracking #activity-container .Work {
 }
 body .time-tracking #activity-container .Play {
   background-color: var(--soft-blue);
-  background-image: url(../../images/icon-play.svg);
+  background-image: url(./assets/images/icon-play.svg);
 }
 body .time-tracking #activity-container .Study {
   background-color: var(--light-red);
-  background-image: url(../../images/icon-study.svg);
+  background-image: url(./assets/images/icon-study.svg);
 }
 body .time-tracking #activity-container .Exercise {
   background-color: var(--lime-green);
-  background-image: url(../../images/icon-exercise.svg);
+  background-image: url(./assets/images/icon-exercise.svg);
 }
 body .time-tracking #activity-container .Social {
   background-color: var(--violet);
-  background-image: url(../../images/icon-social.svg);
+  background-image: url(./assets/images/icon-social.svg);
 }
 body .time-tracking #activity-container .Self {
   background-color: var(--soft);
-  background-image: url(../../images/icon-self-care.svg);
+  background-image: url(./assets/images/icon-self-care.svg);
 }
 
 @media screen and (min-width: 768px) {
