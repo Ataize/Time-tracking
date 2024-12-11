@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="./assets/dist/css/style.css">
+
+  
+</head>
+<body>
+
+  <main class="time-tracking">
+
+    <header class="profile">
+      <div class="profile__user">
+
+        <img class="profile__img" src="./assets/images/image-jeremy.png" alt="Jeremy photo">
+        <div>
+          <span>Report for</span>
+          <p class="profile__name">Jeremy Robson</p>
+        </div>
+      </div>
+      <nav class="period">
+        <ul>
+          <li><button id="dailyBtn">Daily</button></li>
+          <li><button id="weeklyBtn">Weekly</button></li>
+          <li><button id="monthlyBtn">Monthly</button></li>
+        </ul>
+      </nav>
+  
+    </header>
+
+      <div  id="activity-container">
+
+        <section class="activity Work">
+          <div class="activities__container">
+              <div>
+                  <p class="title">Work</p>
+                  <button><img src="./assets/images/icon-ellipsis.svg" alt="botão de opções"></button>
+              </div>
+              <div class="timeframes">
+                  <p class="current">32hrs</p>
+                  <p class="previous">Last Week - <span>36hrs</span></p>
+              </div>
+          </div>
+        </section>
+
+        <section class="activity Play">
+          <div class="activities__container">
+              <div>
+                  <p class="title">Play</p>
+                  <button><img src="./assets/images/icon-ellipsis.svg" alt="botão de opções"></button>
+              </div>
+              <div class="timeframes">
+                  <p class="current">10hrs</p>
+                  <p class="previous">Last Week - <span>8hrs</span></p>
+              </div>
+          </div>
+        </section>
+
+        <section class="activity Study">
+          <div class="activities__container">
+              <div>
+                  <p class="title">Study</p>
+                  <button><img src="./assets/images/icon-ellipsis.svg" alt="botão de opções"></button>
+              </div>
+              <div class="timeframes">
+                  <p class="current">4hrs</p>
+                  <p class="previous">Last Week - <span>7hrs</span></p>
+              </div>
+          </div>
+        </section>
+
+        <section class="activity Exercise">
+          <div class="activities__container">
+              <div>
+                  <p class="title">Exercise</p>
+                  <button><img src="./assets/images/icon-ellipsis.svg" alt="botão de opções"></button>
+              </div>
+              <div class="timeframes">
+                  <p class="current">4hrs</p>
+                  <p class="previous">Last Week - <span>5hrs</span></p>
+              </div>
+          </div>
+        </section>
+
+        <section class="activity Social">
+          <div class="activities__container">
+              <div>
+                  <p class="title">Social</p>
+                  <button><img src="./assets/images/icon-ellipsis.svg" alt="botão de opções"></button>
+              </div>
+              <div class="timeframes">
+                  <p class="current">5hrs</p>
+                  <p class="previous">Last Week - <span>10hrs</span></p>
+              </div>
+          </div>
+        </section>
+
+        <section class="activity Self Care">
+          <div class="activities__container">
+              <div>
+                  <p class="title">Self Care</p>
+                  <button><img src="./assets/images/icon-ellipsis.svg" alt="botão de opções"></button>
+              </div>
+              <div class="timeframes">
+                  <p class="current">2hrs</p>
+                  <p class="previous">Last Week - <span>2hrs</span></p>
+              </div>
+          </div>
+        </section>
+        
+      </div>
+
+
+  </main>
+
+  <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

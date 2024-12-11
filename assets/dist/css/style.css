@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --blue: hsl(246, 80%, 60%);
+  --light-red: hsl(15, 100%, 70%);
+  --soft-blue: hsl(195, 74%, 62%);
+  --light-red: hsl(348, 100%, 68%);
+  --lime-green: hsl(145, 58%, 55%);
+  --violet: hsl(264, 64%, 52%);
+  --soft: hsl(43, 84%, 65%);
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-Blue: hsl(236, 100%, 87%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--very-dark-blue);
+  color: var(--pale-Blue);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 1.1rem;
+}
+body .time-tracking {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+}
+body .time-tracking header, body .time-tracking #activity-container {
+  margin: auto;
+  border-radius: 0.6rem;
+}
+body .time-tracking header {
+  background-color: var(--dark-blue);
+  max-width: 280px;
+}
+body .time-tracking header div {
+  background-color: var(--blue);
+  border-radius: 0.6rem;
+}
+body .time-tracking header div img {
+  width: 20%;
+  height: 20%;
+  margin-right: 1rem;
+  align-self: center;
+}
+body .time-tracking header div div {
+  align-self: center;
+  display: block;
+}
+body .time-tracking header div div span {
+  font-size: 0.7rem;
+}
+body .time-tracking header div, body .time-tracking header ul {
+  padding: 5%;
+  display: flex;
+  width: 100%;
+}
+body .time-tracking header ul {
+  justify-content: space-evenly;
+}
+body .time-tracking header ul li {
+  list-style: none;
+}
+body .time-tracking header ul li button {
+  font-size: 1.1rem;
+  background-color: var(--dark-blue);
+  border: none;
+  color: var(--pale-Blue);
+  cursor: pointer;
+}
+body .time-tracking header ul li button:hover {
+  color: #FFF;
+  font-weight: 700;
+}
+body .time-tracking #activity-container {
+  min-width: 280px;
+}
+body .time-tracking #activity-container .activity {
+  margin-top: 2rem;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  padding-top: 0.6rem;
+  border-radius: 0.6rem;
+}
+body .time-tracking #activity-container .activity .activities__container {
+  margin-top: 10%;
+  background-color: var(--dark-blue);
+  padding: 5%;
+  border-radius: 0.6rem;
+}
+body .time-tracking #activity-container .activity .activities__container div {
+  display: flex;
+  justify-content: space-between;
+  margin: 2%;
+}
+body .time-tracking #activity-container .activity .activities__container div button {
+  background-color: var(--dark-blue);
+  border: none;
+  cursor: pointer;
+}
+body .time-tracking #activity-container .activity .activities__container .title, body .time-tracking #activity-container .activity .activities__container .previous {
+  font-size: 1.1rem;
+}
+body .time-tracking #activity-container .activity .activities__container .current {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+body .time-tracking #activity-container .Work {
+  background-color: var(--light-red);
+  background-image: url(./assets/images/icon-work.svg);
+}
+body .time-tracking #activity-container .Play {
+  background-color: var(--soft-blue);
+  background-image: url(./assets/images/icon-play.svg);
+}
+body .time-tracking #activity-container .Study {
+  background-color: var(--light-red);
+  background-image: url(./assets/images/icon-study.svg);
+}
+body .time-tracking #activity-container .Exercise {
+  background-color: var(--lime-green);
+  background-image: url(./assets/images/icon-exercise.svg);
+}
+body .time-tracking #activity-container .Social {
+  background-color: var(--violet);
+  background-image: url(./assets/images/icon-social.svg);
+}
+body .time-tracking #activity-container .Self {
+  background-color: var(--soft);
+  background-image: url(./assets/images/icon-self-care.svg);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10%;
+  }
+  body .time-tracking {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  body .time-tracking header, body .time-tracking #activity-container {
+    width: 100%;
+    margin: 1rem auto;
+    max-width: 200px;
+  }
+  body .time-tracking header {
+    grid-column: 1;
+    grid-row: 1/4;
+  }
+  body .time-tracking header div {
+    flex-direction: column;
+    height: 230px;
+  }
+  body .time-tracking header div img {
+    width: 30%;
+    height: 30%;
+    align-self: flex-start;
+    margin-left: 5%;
+  }
+  body .time-tracking header div div {
+    margin-top: 1.5rem;
+  }
+  body .time-tracking header div div span {
+    font-size: 0.7rem;
+  }
+  body .time-tracking header div div .profile__name {
+    font-size: 1.7rem;
+    color: #FFF;
+  }
+  body .time-tracking header ul {
+    flex-direction: column;
+    padding: 10%;
+  }
+  body .time-tracking header ul li {
+    margin-bottom: 1rem;
+  }
+  body .time-tracking #activity-container {
+    grid-column: 2/4;
+    grid-row: 1/3;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 900px;
+    margin-left: 1.5rem;
+  }
+  body .time-tracking #activity-container .activity {
+    margin-top: 0;
+  }
+  body .time-tracking #activity-container .activity .activities__container {
+    flex-direction: column;
+  }
+  body .time-tracking #activity-container .activity .activities__container .timeframes {
+    min-height: 50px;
+    flex-direction: column;
+  }
+  body .time-tracking #activity-container .activity .activities__container .timeframes div {
+    flex-direction: column;
+  }
+  body .time-tracking #activity-container .activity .activities__container .timeframes .previous {
+    font-size: 0.9rem;
+  }
+  body .time-tracking #activity-container .activity .activities__container .timeframes .current {
+    font-size: 1.5rem;
+    margin: 0.9rem 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
